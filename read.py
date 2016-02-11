@@ -12,10 +12,10 @@ print data['SPLIT_COD'].value_counts().size
 S = set(data['ASS_ASSIGNMENT'].value_counts().axes[0])
 print S
 
-columns_to_bar = ['ASS_ASSIGNMENT']
+columns_to_barh = ['ASS_ASSIGNMENT']
 
-for column in columns_to_bar:
-    data[column].value_counts(sort=False).plot.bar(title=column)
+for column in columns_to_barh:
+    data[column].value_counts(sort=False).plot.barh(title=column)
     plt.show()
 
 """
