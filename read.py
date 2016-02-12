@@ -17,11 +17,3 @@ columns_to_barh = ['ASS_ASSIGNMENT']
 for column in columns_to_barh:
     data[column].value_counts(sort=False).plot.barh(title=column)
     plt.show()
-
-"""
-columns_to_hist = ['CSPL_ABNCALLS10', 'CSPL_ACCEPTABLE']
-
-for column in columns_to_hist:
-    data[column].value_counts(sort=False).plot.hist(bins=50, title=column)
-    plt.show()
-"""
